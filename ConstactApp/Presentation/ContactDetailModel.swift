@@ -1,5 +1,5 @@
 //
-//  ContactModel.swift
+//  ContactDetailModel.swift
 //  ConstactApp
 //
 //  Created by Jaiswal, Akash on 06/10/19.
@@ -7,7 +7,7 @@
 //
 
 import Foundation
-public enum ContactModel {
+public enum ContactDetailModel {
     public struct Request: Codable {
         public var username: String?
         public init() {
@@ -17,20 +17,21 @@ public enum ContactModel {
         }
     }
     public struct Response: Codable {
-        public var  id: Int?
-        public var  firstName, lastName: String?
-        public var  profilePic: String?
-        public var  favorite: Bool?
-        public var  url: String?
+        public var id: Int?
+        public var firstName, lastName, email, phoneNumber: String?
+        public var profilePic: String?
+        public var favorite: Bool?
+        public var createdAt, updatedAt: String?
         public init() {
         }
-        public init(id: Int?,firstName: String?, lastName: String?, profilePic: String?, favorite: Bool?, url: String?) {
+        public init(id: Int?,firstName: String?, lastName: String?,email: String?, phoneNumber: String?, profilePic: String?, favorite: Bool?, url: String?) {
             self.id = id
             self.firstName = firstName
             self.lastName = lastName
+            self.firstName = email
+            self.lastName = phoneNumber
             self.profilePic = profilePic
             self.favorite = favorite
-            self.url = url
         }
     }
 }

@@ -25,6 +25,7 @@
 		8E0DA5D02348C04F007A23E5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5CF2348C04F007A23E5 /* BaseViewController.swift */; };
 		8E0DA5D22348D231007A23E5 /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5D12348D231007A23E5 /* ContactDetails.swift */; };
 		8E0DA5D42349A266007A23E5 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5D32349A266007A23E5 /* ContactModel.swift */; };
+		8E0DA5D62349A3F9007A23E5 /* ContactDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5D52349A3F9007A23E5 /* ContactDetailModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		8E0DA5CF2348C04F007A23E5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8E0DA5D12348D231007A23E5 /* ContactDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetails.swift; sourceTree = "<group>"; };
 		8E0DA5D32349A266007A23E5 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactModel.swift; path = ConstactApp/Presentation/ContactModel.swift; sourceTree = SOURCE_ROOT; };
+		8E0DA5D52349A3F9007A23E5 /* ContactDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactDetailModel.swift; path = ConstactApp/Presentation/ContactDetailModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +182,7 @@
 			isa = PBXGroup;
 			children = (
 				8E0DA5D32349A266007A23E5 /* ContactModel.swift */,
+				8E0DA5D52349A3F9007A23E5 /* ContactDetailModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				8E0DA5872348955E007A23E5 /* HomeViewController.swift in Sources */,
 				8E0DA5852348955E007A23E5 /* AppDelegate.swift in Sources */,
 				8E0DA5BB23489AB4007A23E5 /* ContactPresentationModel.swift in Sources */,
+				8E0DA5D62349A3F9007A23E5 /* ContactDetailModel.swift in Sources */,
 				8E0DA5BF23489E67007A23E5 /* UIExtension.swift in Sources */,
 				8E0DA5CC2348BA4A007A23E5 /* GradientView.swift in Sources */,
 			);
