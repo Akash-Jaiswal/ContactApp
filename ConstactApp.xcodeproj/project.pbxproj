@@ -14,7 +14,6 @@
 		8E0DA58F2348955F007A23E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0DA58D2348955F007A23E5 /* LaunchScreen.storyboard */; };
 		8E0DA59A2348955F007A23E5 /* ConstactAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5992348955F007A23E5 /* ConstactAppTests.swift */; };
 		8E0DA5A52348955F007A23E5 /* ConstactAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5A42348955F007A23E5 /* ConstactAppUITests.swift */; };
-		8E0DA5B8234899D1007A23E5 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5B7234899D1007A23E5 /* ContactModel.swift */; };
 		8E0DA5BB23489AB4007A23E5 /* ContactPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5BA23489AB4007A23E5 /* ContactPresentationModel.swift */; };
 		8E0DA5BF23489E67007A23E5 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5BE23489E67007A23E5 /* UIExtension.swift */; };
 		8E0DA5C323489F82007A23E5 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5C123489F82007A23E5 /* ContactCell.swift */; };
@@ -58,7 +57,6 @@
 		8E0DA5A02348955F007A23E5 /* ConstactAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstactAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0DA5A42348955F007A23E5 /* ConstactAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstactAppUITests.swift; sourceTree = "<group>"; };
 		8E0DA5A62348955F007A23E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E0DA5B7234899D1007A23E5 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
 		8E0DA5BA23489AB4007A23E5 /* ContactPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPresentationModel.swift; sourceTree = "<group>"; };
 		8E0DA5BE23489E67007A23E5 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
 		8E0DA5C123489F82007A23E5 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
@@ -179,7 +177,6 @@
 		8E0DA5B523489908007A23E5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				8E0DA5B7234899D1007A23E5 /* ContactModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -388,7 +385,6 @@
 				8E0DA5852348955E007A23E5 /* AppDelegate.swift in Sources */,
 				8E0DA5BB23489AB4007A23E5 /* ContactPresentationModel.swift in Sources */,
 				8E0DA5BF23489E67007A23E5 /* UIExtension.swift in Sources */,
-				8E0DA5B8234899D1007A23E5 /* ContactModel.swift in Sources */,
 				8E0DA5CC2348BA4A007A23E5 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
