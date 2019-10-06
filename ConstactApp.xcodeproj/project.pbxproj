@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		8E0DA5852348955E007A23E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5842348955E007A23E5 /* AppDelegate.swift */; };
-		8E0DA5872348955E007A23E5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5862348955E007A23E5 /* ViewController.swift */; };
+		8E0DA5872348955E007A23E5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5862348955E007A23E5 /* HomeViewController.swift */; };
 		8E0DA58A2348955E007A23E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0DA5882348955E007A23E5 /* Main.storyboard */; };
 		8E0DA58C2348955F007A23E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0DA58B2348955F007A23E5 /* Assets.xcassets */; };
 		8E0DA58F2348955F007A23E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0DA58D2348955F007A23E5 /* LaunchScreen.storyboard */; };
 		8E0DA59A2348955F007A23E5 /* ConstactAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5992348955F007A23E5 /* ConstactAppTests.swift */; };
 		8E0DA5A52348955F007A23E5 /* ConstactAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5A42348955F007A23E5 /* ConstactAppUITests.swift */; };
+		8E0DA5B8234899D1007A23E5 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5B7234899D1007A23E5 /* ContactModel.swift */; };
+		8E0DA5BB23489AB4007A23E5 /* ContactPresentationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5BA23489AB4007A23E5 /* ContactPresentationModel.swift */; };
+		8E0DA5BF23489E67007A23E5 /* UIExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5BE23489E67007A23E5 /* UIExtension.swift */; };
+		8E0DA5C323489F82007A23E5 /* ContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5C123489F82007A23E5 /* ContactCell.swift */; };
+		8E0DA5C423489F82007A23E5 /* ContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0DA5C223489F82007A23E5 /* ContactCell.xib */; };
+		8E0DA5C82348B536007A23E5 /* ContactDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5C72348B536007A23E5 /* ContactDetailVC.swift */; };
+		8E0DA5CA2348B562007A23E5 /* ContactEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5C92348B562007A23E5 /* ContactEditVC.swift */; };
+		8E0DA5CC2348BA4A007A23E5 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5CB2348BA4A007A23E5 /* GradientView.swift */; };
+		8E0DA5CE2348BAE8007A23E5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5CD2348BAE8007A23E5 /* Theme.swift */; };
+		8E0DA5D02348C04F007A23E5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5CF2348C04F007A23E5 /* BaseViewController.swift */; };
+		8E0DA5D22348D231007A23E5 /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5D12348D231007A23E5 /* ContactDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +47,7 @@
 /* Begin PBXFileReference section */
 		8E0DA5812348955E007A23E5 /* ConstactApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConstactApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0DA5842348955E007A23E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8E0DA5862348955E007A23E5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E0DA5862348955E007A23E5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8E0DA5892348955E007A23E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8E0DA58B2348955F007A23E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E0DA58E2348955F007A23E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +58,17 @@
 		8E0DA5A02348955F007A23E5 /* ConstactAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConstactAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0DA5A42348955F007A23E5 /* ConstactAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstactAppUITests.swift; sourceTree = "<group>"; };
 		8E0DA5A62348955F007A23E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E0DA5B7234899D1007A23E5 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactModel.swift; sourceTree = "<group>"; };
+		8E0DA5BA23489AB4007A23E5 /* ContactPresentationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPresentationModel.swift; sourceTree = "<group>"; };
+		8E0DA5BE23489E67007A23E5 /* UIExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtension.swift; sourceTree = "<group>"; };
+		8E0DA5C123489F82007A23E5 /* ContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCell.swift; sourceTree = "<group>"; };
+		8E0DA5C223489F82007A23E5 /* ContactCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactCell.xib; sourceTree = "<group>"; };
+		8E0DA5C72348B536007A23E5 /* ContactDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailVC.swift; sourceTree = "<group>"; };
+		8E0DA5C92348B562007A23E5 /* ContactEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactEditVC.swift; sourceTree = "<group>"; };
+		8E0DA5CB2348BA4A007A23E5 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		8E0DA5CD2348BAE8007A23E5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		8E0DA5CF2348C04F007A23E5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		8E0DA5D12348D231007A23E5 /* ContactDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +119,10 @@
 		8E0DA5832348955E007A23E5 /* ConstactApp */ = {
 			isa = PBXGroup;
 			children = (
+				8E0DA5B223489883007A23E5 /* Domain */,
+				8E0DA5B32348988E007A23E5 /* Platform */,
+				8E0DA5B42348989A007A23E5 /* Presentation */,
 				8E0DA5842348955E007A23E5 /* AppDelegate.swift */,
-				8E0DA5862348955E007A23E5 /* ViewController.swift */,
 				8E0DA5882348955E007A23E5 /* Main.storyboard */,
 				8E0DA58B2348955F007A23E5 /* Assets.xcassets */,
 				8E0DA58D2348955F007A23E5 /* LaunchScreen.storyboard */,
@@ -123,6 +147,103 @@
 				8E0DA5A62348955F007A23E5 /* Info.plist */,
 			);
 			path = ConstactAppUITests;
+			sourceTree = "<group>";
+		};
+		8E0DA5B223489883007A23E5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DA5B523489908007A23E5 /* Models */,
+				8E0DA5B623489917007A23E5 /* Usecase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		8E0DA5B32348988E007A23E5 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		8E0DA5B42348989A007A23E5 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DA5BC23489E3C007A23E5 /* Common */,
+				8E0DA5B923489A99007A23E5 /* Home */,
+				8E0DA5C52348B4D5007A23E5 /* ContactDetail */,
+				8E0DA5C62348B4E7007A23E5 /* ContactEdit */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		8E0DA5B523489908007A23E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DA5B7234899D1007A23E5 /* ContactModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8E0DA5B623489917007A23E5 /* Usecase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Usecase;
+			sourceTree = "<group>";
+		};
+		8E0DA5B923489A99007A23E5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DA5C023489F5A007A23E5 /* Cells */,
+				8E0DA5862348955E007A23E5 /* HomeViewController.swift */,
+				8E0DA5BA23489AB4007A23E5 /* ContactPresentationModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8E0DA5BC23489E3C007A23E5 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DA5BD23489E4B007A23E5 /* Extension */,
+				8E0DA5CB2348BA4A007A23E5 /* GradientView.swift */,
+				8E0DA5CD2348BAE8007A23E5 /* Theme.swift */,
+				8E0DA5CF2348C04F007A23E5 /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		8E0DA5BD23489E4B007A23E5 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DA5BE23489E67007A23E5 /* UIExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8E0DA5C023489F5A007A23E5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DA5C123489F82007A23E5 /* ContactCell.swift */,
+				8E0DA5C223489F82007A23E5 /* ContactCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8E0DA5C52348B4D5007A23E5 /* ContactDetail */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DA5C72348B536007A23E5 /* ContactDetailVC.swift */,
+				8E0DA5D12348D231007A23E5 /* ContactDetails.swift */,
+			);
+			path = ContactDetail;
+			sourceTree = "<group>";
+		};
+		8E0DA5C62348B4E7007A23E5 /* ContactEdit */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DA5C92348B562007A23E5 /* ContactEditVC.swift */,
+			);
+			path = ContactEdit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +350,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E0DA5C423489F82007A23E5 /* ContactCell.xib in Resources */,
 				8E0DA58F2348955F007A23E5 /* LaunchScreen.storyboard in Resources */,
 				8E0DA58C2348955F007A23E5 /* Assets.xcassets in Resources */,
 				8E0DA58A2348955E007A23E5 /* Main.storyboard in Resources */,
@@ -256,8 +378,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E0DA5872348955E007A23E5 /* ViewController.swift in Sources */,
+				8E0DA5C82348B536007A23E5 /* ContactDetailVC.swift in Sources */,
+				8E0DA5D22348D231007A23E5 /* ContactDetails.swift in Sources */,
+				8E0DA5CE2348BAE8007A23E5 /* Theme.swift in Sources */,
+				8E0DA5D02348C04F007A23E5 /* BaseViewController.swift in Sources */,
+				8E0DA5CA2348B562007A23E5 /* ContactEditVC.swift in Sources */,
+				8E0DA5C323489F82007A23E5 /* ContactCell.swift in Sources */,
+				8E0DA5872348955E007A23E5 /* HomeViewController.swift in Sources */,
 				8E0DA5852348955E007A23E5 /* AppDelegate.swift in Sources */,
+				8E0DA5BB23489AB4007A23E5 /* ContactPresentationModel.swift in Sources */,
+				8E0DA5BF23489E67007A23E5 /* UIExtension.swift in Sources */,
+				8E0DA5B8234899D1007A23E5 /* ContactModel.swift in Sources */,
+				8E0DA5CC2348BA4A007A23E5 /* GradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
