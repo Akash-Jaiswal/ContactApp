@@ -69,8 +69,8 @@
 		8E0DA5CD2348BAE8007A23E5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		8E0DA5CF2348C04F007A23E5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8E0DA5D12348D231007A23E5 /* ContactDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetails.swift; sourceTree = "<group>"; };
-		8E0DA5D32349A266007A23E5 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactModel.swift; path = ConstactApp/Presentation/ContactModel.swift; sourceTree = SOURCE_ROOT; };
-		8E0DA5D52349A3F9007A23E5 /* ContactDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactDetailModel.swift; path = ConstactApp/Presentation/ContactDetailModel.swift; sourceTree = SOURCE_ROOT; };
+		8E0DA5D32349A266007A23E5 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactModel.swift; path = ConstactApp/Domain/Models/ContactModel.swift; sourceTree = SOURCE_ROOT; };
+		8E0DA5D52349A3F9007A23E5 /* ContactDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactDetailModel.swift; path = ConstactApp/Domain/Models/ContactDetailModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +121,7 @@
 		8E0DA5832348955E007A23E5 /* ConstactApp */ = {
 			isa = PBXGroup;
 			children = (
-				8E0DA5B223489883007A23E5 /* Domain */,
+				8E0DA5D72349A541007A23E5 /* Domain */,
 				8E0DA5B32348988E007A23E5 /* Platform */,
 				8E0DA5B42348989A007A23E5 /* Presentation */,
 				8E0DA5842348955E007A23E5 /* AppDelegate.swift */,
@@ -151,15 +151,6 @@
 			path = ConstactAppUITests;
 			sourceTree = "<group>";
 		};
-		8E0DA5B223489883007A23E5 /* Domain */ = {
-			isa = PBXGroup;
-			children = (
-				8E0DA5B523489908007A23E5 /* Models */,
-				8E0DA5B623489917007A23E5 /* Usecase */,
-			);
-			path = Domain;
-			sourceTree = "<group>";
-		};
 		8E0DA5B32348988E007A23E5 /* Platform */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,22 +167,6 @@
 				8E0DA5C62348B4E7007A23E5 /* ContactEdit */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		8E0DA5B523489908007A23E5 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				8E0DA5D32349A266007A23E5 /* ContactModel.swift */,
-				8E0DA5D52349A3F9007A23E5 /* ContactDetailModel.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		8E0DA5B623489917007A23E5 /* Usecase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Usecase;
 			sourceTree = "<group>";
 		};
 		8E0DA5B923489A99007A23E5 /* Home */ = {
@@ -247,6 +222,23 @@
 				8E0DA5C92348B562007A23E5 /* ContactEditVC.swift */,
 			);
 			path = ContactEdit;
+			sourceTree = "<group>";
+		};
+		8E0DA5D72349A541007A23E5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DA5D82349A569007A23E5 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		8E0DA5D82349A569007A23E5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E0DA5D32349A266007A23E5 /* ContactModel.swift */,
+				8E0DA5D52349A3F9007A23E5 /* ContactDetailModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
