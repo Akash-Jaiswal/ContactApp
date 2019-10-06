@@ -24,6 +24,7 @@
 		8E0DA5CE2348BAE8007A23E5 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5CD2348BAE8007A23E5 /* Theme.swift */; };
 		8E0DA5D02348C04F007A23E5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5CF2348C04F007A23E5 /* BaseViewController.swift */; };
 		8E0DA5D22348D231007A23E5 /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5D12348D231007A23E5 /* ContactDetails.swift */; };
+		8E0DA5D42349A266007A23E5 /* ContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0DA5D32349A266007A23E5 /* ContactModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		8E0DA5CD2348BAE8007A23E5 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		8E0DA5CF2348C04F007A23E5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		8E0DA5D12348D231007A23E5 /* ContactDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetails.swift; sourceTree = "<group>"; };
+		8E0DA5D32349A266007A23E5 /* ContactModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContactModel.swift; path = ConstactApp/Presentation/ContactModel.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +179,7 @@
 		8E0DA5B523489908007A23E5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8E0DA5D32349A266007A23E5 /* ContactModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 			files = (
 				8E0DA5C82348B536007A23E5 /* ContactDetailVC.swift in Sources */,
 				8E0DA5D22348D231007A23E5 /* ContactDetails.swift in Sources */,
+				8E0DA5D42349A266007A23E5 /* ContactModel.swift in Sources */,
 				8E0DA5CE2348BAE8007A23E5 /* Theme.swift in Sources */,
 				8E0DA5D02348C04F007A23E5 /* BaseViewController.swift in Sources */,
 				8E0DA5CA2348B562007A23E5 /* ContactEditVC.swift in Sources */,
