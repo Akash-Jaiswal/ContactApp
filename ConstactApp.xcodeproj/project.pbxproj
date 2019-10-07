@@ -238,10 +238,10 @@
 			isa = PBXGroup;
 			children = (
 				8E0DA5C023489F5A007A23E5 /* Cells */,
-				8E0DA5862348955E007A23E5 /* ContactsViewController.swift */,
-				8E0DA5BA23489AB4007A23E5 /* ContactPresentationModel.swift */,
 				8E0DA6022349B5D5007A23E5 /* ContactsInteractor.swift */,
 				8E0DA6042349B5F0007A23E5 /* ContactsPresenter.swift */,
+				8E0DA5862348955E007A23E5 /* ContactsViewController.swift */,
+				8E0DA5BA23489AB4007A23E5 /* ContactPresentationModel.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -317,8 +317,8 @@
 		8E0DA5D92349A5B9007A23E5 /* Platform */ = {
 			isa = PBXGroup;
 			children = (
-				8E0DA5EE2349AE92007A23E5 /* Scenes */,
 				8E0DA5DA2349A5D5007A23E5 /* Common */,
+				8E0DA5EE2349AE92007A23E5 /* Scenes */,
 			);
 			path = Platform;
 			sourceTree = "<group>";
@@ -372,9 +372,9 @@
 		8E0DA5EE2349AE92007A23E5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				8E0DA5F12349AEB9007A23E5 /* ContactEdit */,
-				8E0DA5F02349AEAC007A23E5 /* ContactDetail */,
 				8E0DA5EF2349AE99007A23E5 /* Contacts */,
+				8E0DA5F02349AEAC007A23E5 /* ContactDetail */,
+				8E0DA5F12349AEB9007A23E5 /* ContactEdit */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -406,9 +406,9 @@
 		8E0DA5F22349AED7007A23E5 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				8E0DA5F62349AF13007A23E5 /* ContactEdit */,
-				8E0DA5F52349AF04007A23E5 /* ContactDetail */,
 				8E0DA5F32349AEEA007A23E5 /* Contact */,
+				8E0DA5F52349AF04007A23E5 /* ContactDetail */,
+				8E0DA5F62349AF13007A23E5 /* ContactEdit */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -885,7 +885,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5N469UN8T9;
 				INFOPLIST_FILE = ConstactApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -903,7 +905,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5N469UN8T9;
 				INFOPLIST_FILE = ConstactApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

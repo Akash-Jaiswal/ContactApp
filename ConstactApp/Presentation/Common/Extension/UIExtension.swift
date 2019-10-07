@@ -37,7 +37,7 @@ extension UIView {
         backgroundView.tag = 475647
         backgroundView.alpha = 0.6
         var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
-        activityIndicator = UIActivityIndicatorView(frame: CGRect.init(x: 0, y: 0, width: 50, height: 50))
+        activityIndicator = UIActivityIndicatorView(frame: CGRect.init(x: 0, y: 0, width: 100, height: 100))
         activityIndicator.center = self.center
         activityIndicator.hidesWhenStopped = true
         activityIndicator.style = UIActivityIndicatorView.Style.gray
@@ -92,5 +92,13 @@ extension UIViewController {
         let OKAction = UIAlertAction(title: "OK", style: .default, handler: nil)
         alertController.addAction(OKAction)
         self.present(alertController, animated: true, completion: nil)
+    }
+}
+extension String {
+    func isEmptyOrWhitespace() -> Bool {
+        if(self.isEmpty) {
+            return true
+        }
+        return (self.trimmingCharacters(in: NSCharacterSet.whitespaces) == "")
     }
 }

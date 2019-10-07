@@ -46,5 +46,9 @@
         <key>NSAllowsArbitraryLoads</key>
         <true/>
     </dict>
+    <key>NSPhotoLibraryUsageDescription</key>
+    <string>For Contact App Usage</string>
+    <key>NSCameraUsageDescription</key>
+    <string>For Contact App Usage</string>
 </dict>
 </plist>

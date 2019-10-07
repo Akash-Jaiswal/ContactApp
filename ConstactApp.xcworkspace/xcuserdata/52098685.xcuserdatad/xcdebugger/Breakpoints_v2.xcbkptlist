@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ConstactApp/Presentation/ContactEdit/ContactEditVC.swift"
-            timestampString = "592079066.929755"
+            timestampString = "592134605.731339"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "113"
-            endingLineNumber = "113"
+            startingLineNumber = "176"
+            endingLineNumber = "176"
             landmarkName = "addContactsSuccess(viewModel:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ConstactApp/Presentation/ContactEdit/ContactEditVC.swift"
-            timestampString = "592079066.930487"
+            timestampString = "592134605.731409"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
             landmarkName = "addContactsFailure(viewModel:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -58,11 +58,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "ConstactApp/Presentation/ContactEdit/ContactEditVC.swift"
-            timestampString = "592079066.930874"
+            timestampString = "592134605.731465"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "129"
-            endingLineNumber = "129"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
             landmarkName = "updateContactsFailure(viewModel:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -106,7 +106,7 @@
                   moduleName = "ConstactApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/52098685/Documents/Akash/Practice/ConstactApp/ConstactApp/Platform/Scenes/ContactEdit/ContactEditUsecase.swift"
-                  timestampString = "592078177.99929"
+                  timestampString = "592134605.833743"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "12"
@@ -121,7 +121,7 @@
                   moduleName = "ConstactApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/52098685/Documents/Akash/Practice/ConstactApp/ConstactApp/Platform/Scenes/ContactEdit/ContactEditUsecase.swift"
-                  timestampString = "592078178.0023"
+                  timestampString = "592134605.835847"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -154,7 +154,7 @@
                   moduleName = "ConstactApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/52098685/Documents/Akash/Practice/ConstactApp/ConstactApp/Platform/Scenes/ContactEdit/ContactEditUsecase.swift"
-                  timestampString = "592078178.013804"
+                  timestampString = "592134605.841709"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "27"
@@ -169,7 +169,7 @@
                   moduleName = "ConstactApp"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/52098685/Documents/Akash/Practice/ConstactApp/ConstactApp/Platform/Scenes/ContactEdit/ContactEditUsecase.swift"
-                  timestampString = "592078178.016842"
+                  timestampString = "592134605.844547"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "27"
@@ -249,28 +249,12 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ConstactApp/Platform/Common/API/APIManager.swift"
-            timestampString = "592079066.932169"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "81"
-            endingLineNumber = "81"
-            landmarkName = "requestAPI(request:decodingType:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "ConstactApp/Presentation/ContactEdit/ContactEditVC.swift"
-            timestampString = "592079066.9323781"
+            timestampString = "592134605.731647"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "updateContactsSuccess(viewModel:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -281,13 +265,109 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ConstactApp/Presentation/ContactDetail/ContactDetailVC.swift"
-            timestampString = "592079066.932717"
+            filePath = "ConstactApp/Presentation/ContactEdit/ContactEditVC.swift"
+            timestampString = "592134605.7316999"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
-            landmarkName = "favoriteTapped(_:)"
+            startingLineNumber = "102"
+            endingLineNumber = "102"
+            landmarkName = "doneTapped()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ConstactApp/Presentation/ContactDetail/ContactDetailVC.swift"
+            timestampString = "592134605.731807"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "92"
+            endingLineNumber = "92"
+            landmarkName = "callTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ConstactApp/Presentation/ContactDetail/ContactDetailVC.swift"
+            timestampString = "592134605.731854"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "callTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ConstactApp/Presentation/ContactDetail/ContactDetailVC.swift"
+            timestampString = "592134605.731897"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "callTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ConstactApp/Presentation/ContactDetail/ContactDetailVC.swift"
+            timestampString = "592134605.731941"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
+            landmarkName = "sendEmailTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ConstactApp/Presentation/ContactEdit/ContactEditVC.swift"
+            timestampString = "592134605.732028"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "checkPermission()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ConstactApp/Platform/Common/API/APIManager.swift"
+            timestampString = "592134605.732069"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "requestAPI(request:decodingType:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

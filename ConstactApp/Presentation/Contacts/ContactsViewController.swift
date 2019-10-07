@@ -12,9 +12,7 @@ protocol IContactsViewable {
     func getContactsFailure(viewModel: ContactPresentationModel)
 }
 class ContactsViewController: UIViewController {
-    var contactDictionary = [String: [Contact]]()
-    var contactList = [Contact]()
-    var contactSectionTitles = [String]()
+   
     @IBOutlet weak var contactListTableView: UITableView! {
         didSet {
             self.contactListTableView.register(UINib(nibName: ContactCell.reuseID, bundle: nil), forCellReuseIdentifier: ContactCell.reuseID)
@@ -23,10 +21,11 @@ class ContactsViewController: UIViewController {
             
         }
     }
+    var contactDictionary = [String: [Contact]]()
+    var contactList = [Contact]()
+    var contactSectionTitles = [String]()
     var interactor: ContactsInteractor?
     var presenter: ContactsPresenter?
-    //var router: IHomeRoutable?
-    // MARK: Object lifecycle
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setup()
@@ -62,7 +61,7 @@ class ContactsViewController: UIViewController {
         }
     }
 }
-
+// MARK: - Tableview delgate and datasource method
 extension ContactsViewController : UITableViewDelegate,UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
          return contactSectionTitles.count

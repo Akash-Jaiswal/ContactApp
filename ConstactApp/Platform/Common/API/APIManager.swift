@@ -45,7 +45,6 @@ class APIManager:APIService {
         sessionManager.request(urlRequest)
             .validate(statusCode: 200...500)
             .responseData(completionHandler: { response in
-                print("headers: \(request.headers!), request: \(String(data: urlRequest.httpBody ?? Data("GET Request".utf8), encoding: .utf8)!), \n url: \(baseUrl), \n response data: \(String(data: response.data!, encoding: .utf8)!), \n Response type: \(Res.self), \n Response Headers: \(response.response?.allHeaderFields["Links"]),  \n Response StatusCode: \(response.response?.statusCode)")
                 switch response.result {
                 case .success(let data):
                     if let statusCode = response.response?.statusCode {
@@ -57,25 +56,8 @@ class APIManager:APIService {
                                 let error = NSError(domain: "\(url)", code: statusCode, userInfo: [NSLocalizedDescriptionKey: "Error From Server"])
                                 completion?(APIResponseHandler.onFailure(error: error))
                             }
-//                                if let err = responseObj.errors {
-//                                    completion?(APIResponseHandler.onFailureResponse(error: err))
-//                                } else {
-                                    //if responseObj.status == APIConstants.DefaultParams.statusSuccess {
-                                        //completion?(APIResponseHandler.onSuccess(value: responseObj))
-//                                    }
-//                                    else {
-//                                        completion?(APIResponseHandler.onFailureResponse(error: [APIErrorInfo(status: -1302, code: "-1302", source: nil, value: nil, message: responseObj.messages?.count ?? 0 > 0 ? responseObj.messages?[0].header ?? "Invalid Request" : "Invalid Request")]))
-//                                    }
-                                //}
-                           // }
-                     //   else {
-//                                let error = NSError(domain: "\(baseUrl)", code: NSURLError.invalidResponse.rawValue, userInfo: [NSLocalizedDescriptionKey: "Invalid Response"])
-//                                completion?(APIResponseHandler.onFailure(error: error))
-                       //     }
                         default:
                             break
-//                            let error = NSError(domain: "\(baseUrl)", code: NSURLError.errorFromServer.rawValue, userInfo: [NSLocalizedDescriptionKey: "Error From Server"])
-//                            completion?(APIResponseHandler.onFailure(error: error))
                         }
                     }
                 case .failure(let error):

@@ -14,7 +14,6 @@ public enum ContactModel {
     }
 }
 public struct Contact: Codable {
-    
     public var  id: Int?
     public var  first_name, last_name: String?
     public var  profile_pic: String?

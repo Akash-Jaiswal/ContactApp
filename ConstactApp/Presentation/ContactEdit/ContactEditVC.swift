@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import MessageUI
+import Photos
 protocol IContactsEditViewable {
     func addContactsSuccess(viewModel: ContactDetailsPresentationModel)
     func addContactsFailure(viewModel: ContactDetailsPresentationModel)
@@ -67,6 +69,26 @@ class ContactEditVC: UIViewController {
         self.tfEmail.text = self.contactDetail?.email
         self.profileImage.sd_setImage(with: URL(string: contactDetail?.profile_pic ?? "placeholder_photo"), placeholderImage: UIImage(named: "placeholder_photo"))
         self.tfFirstName.becomeFirstResponder()
+        checkPermission()
+    }
+    func checkPermission() {
+        let photoAuthorizationStatus = PHPhotoLibrary.authorizationStatus()
+        switch photoAuthorizationStatus {
+        case .authorized:
+            print("Access is granted by user")
+        case .notDetermined: PHPhotoLibrary.requestAuthorization({
+            (newStatus) in print("status is \(newStatus)")
+            if newStatus == PHAuthorizationStatus.authorized {
+                print("success")
+            }
+        })
+        case .restricted:
+            print("User do not have access to photo album.")
+        case .denied:
+            print("User has denied the permission.")
+        default:
+            break
+        }
     }
     func configNavBar() {
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(cancelTapped))
@@ -77,6 +99,22 @@ class ContactEditVC: UIViewController {
         self.navigationController?.popViewController(animated: false)
     }
     @objc func doneTapped() {
+        guard !(tfFirstName.text?.isEmptyOrWhitespace() ?? true) else {
+            self.alert(message: "please enter firstname.")
+            return
+        }
+        guard !(tfLastName.text?.isEmptyOrWhitespace() ?? true) else {
+            self.alert(message: "Please enter Lastname.")
+            return
+        }
+        guard !(tfMobile.text?.isEmptyOrWhitespace() ?? true) else {
+            self.alert(message: "Please enter Mobile Number.")
+            return
+        }
+        guard !(tfEmail.text?.isEmptyOrWhitespace() ?? true) else {
+            self.alert(message: "Please enter Email.")
+            return
+        }
         self.view.activityStartAnimating()
         if(isEdit) {
             if let detail  = contactDetail , let id = detail.id {
@@ -90,6 +128,11 @@ class ContactEditVC: UIViewController {
         }
     }
     @IBAction func cameraTapped(_ sender: Any) {
+        let imagePicker = UIImagePickerController()
+        imagePicker.delegate = self
+        imagePicker.allowsEditing = false
+        imagePicker.sourceType = .photoLibrary
+        self.navigationController?.present(imagePicker, animated: true, completion: nil)
     }
 }
 extension ContactEditVC :UITextFieldDelegate {
@@ -107,12 +150,31 @@ extension ContactEditVC :UITextFieldDelegate {
             break
         }
     }
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField.tag {
+        case 0:
+            tfFirstName.resignFirstResponder()
+            tfLastName.becomeFirstResponder()
+        case 1:
+            tfLastName.resignFirstResponder()
+            tfMobile.becomeFirstResponder()
+        case 2:
+            tfMobile.resignFirstResponder()
+            tfEmail.becomeFirstResponder()
+        case 3:
+            tfEmail.resignFirstResponder()
+            self.doneTapped()
+        default:
+            break
+        }
+        return true
+        
+    }
 }
 extension ContactEditVC: IContactsEditViewable {
     func addContactsSuccess(viewModel: ContactDetailsPresentationModel) {
         self.navigationController?.popViewController(animated: true)
         self.view.activityStopAnimating()
-        
     }
     
     func addContactsFailure(viewModel: ContactDetailsPresentationModel) {
@@ -122,12 +184,22 @@ extension ContactEditVC: IContactsEditViewable {
     func updateContactsSuccess(viewModel: ContactDetailsPresentationModel) {
         self.navigationController?.popViewController(animated: true)
         self.view.activityStopAnimating()
-        
     }
     
     func updateContactsFailure(viewModel: ContactDetailsPresentationModel) {
         self.view.activityStopAnimating()
     }
-    
-    
+}
+//MARK: - To select the image from gallery
+extension ContactEditVC : UIImagePickerControllerDelegate,UINavigationControllerDelegate {
+    @objc func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let pickedImage = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            profileImage.contentMode = .scaleAspectFill
+            profileImage.image = pickedImage
+        }
+        self.navigationController?.dismiss(animated: true, completion: nil)
+    }
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        self.navigationController?.dismiss(animated: true, completion: nil)
+    }
 }

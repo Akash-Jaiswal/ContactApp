@@ -20,7 +20,6 @@ internal class ContactDetailUseCase: IContactDetailUsecase {
             }
         })
     }
-    
     var responseHandler: IResponseHandler
     init(handler: IResponseHandler) {
         self.responseHandler = handler

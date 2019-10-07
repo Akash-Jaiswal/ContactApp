@@ -8,6 +8,10 @@
 
 import Foundation
 internal class ContactEditUseCase: IContactEditUsecase {
+    var responseHandler: IContactEditResponseHandler
+    init(handler: IContactEditResponseHandler) {
+        self.responseHandler = handler
+    }
     func addContact(request: APIRequest<ContactDetailModel.Request>) {
         APIManager.shared.requestAPI(request: request, decodingType: ContactDetails.self, completion: { response in
             switch response {
@@ -32,9 +36,5 @@ internal class ContactEditUseCase: IContactEditUsecase {
                 self.responseHandler.onDomainReachableError(error: error)
             }
         })
-    }
-    var responseHandler: IContactEditResponseHandler
-    init(handler: IContactEditResponseHandler) {
-        self.responseHandler = handler
     }
 }
