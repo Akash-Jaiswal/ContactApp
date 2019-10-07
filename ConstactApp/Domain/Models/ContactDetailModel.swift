@@ -9,29 +9,29 @@
 import Foundation
 public enum ContactDetailModel {
     public struct Request: Codable {
-        public var username: String?
+        public var id: Int?
+        public var first_name, last_name, email, phone_number: String?
+        public var favorite: Bool?
+        public var created_at, updated_at: String?
         public init() {
-        }
-        public init(username: String?) {
-            self.username = username
         }
     }
-    public struct Response: Codable {
-        public var id: Int?
-        public var firstName, lastName, email, phoneNumber: String?
-        public var profilePic: String?
-        public var favorite: Bool?
-        public var createdAt, updatedAt: String?
-        public init() {
-        }
-        public init(id: Int?,firstName: String?, lastName: String?,email: String?, phoneNumber: String?, profilePic: String?, favorite: Bool?, url: String?) {
-            self.id = id
-            self.firstName = firstName
-            self.lastName = lastName
-            self.firstName = email
-            self.lastName = phoneNumber
-            self.profilePic = profilePic
-            self.favorite = favorite
-        }
+}
+public struct ContactDetails: Codable {
+    public var id: Int?
+    public var first_name, last_name, email, phone_number: String?
+    public var profile_pic: String?
+    public var favorite: Bool?
+    public var created_at, updated_at: String?
+    public init() {
+    }
+    public init(id: Int?,first_name: String?, last_name: String?,email: String?, phone_number: String?, profile_pic: String?, favorite: Bool?, url: String?) {
+        self.id = id
+        self.first_name = first_name
+        self.last_name = last_name
+        self.email = email
+        self.phone_number = phone_number
+        self.profile_pic = profile_pic
+        self.favorite = favorite
     }
 }

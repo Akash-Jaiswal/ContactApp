@@ -13,7 +13,7 @@ extension UIView {
     @IBInspectable var cornerRadius: CGFloat {
         set {
             layer.cornerRadius = newValue
-            clipsToBounds = newValue > 0
+            self.layer.masksToBounds = true
         }
         get {
             return layer.cornerRadius
@@ -30,6 +30,32 @@ extension UIView {
             return UIColor.lightGray
         }
     }
+    func activityStartAnimating() {
+        let backgroundView = UIView()
+        backgroundView.frame = CGRect.init(x: 0, y: 0, width: self.bounds.width, height: self.bounds.height)
+        backgroundView.backgroundColor = .gray
+        backgroundView.tag = 475647
+        backgroundView.alpha = 0.6
+        var activityIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+        activityIndicator = UIActivityIndicatorView(frame: CGRect.init(x: 0, y: 0, width: 50, height: 50))
+        activityIndicator.center = self.center
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.style = UIActivityIndicatorView.Style.gray
+        activityIndicator.color = .black
+        activityIndicator.startAnimating()
+        self.isUserInteractionEnabled = false
+        
+        backgroundView.addSubview(activityIndicator)
+        
+        self.addSubview(backgroundView)
+    }
+    
+    func activityStopAnimating() {
+        if let background = viewWithTag(475647){
+            background.removeFromSuperview()
+        }
+        self.isUserInteractionEnabled = true
+    }
 }
 
 protocol Reusable {
@@ -43,3 +69,28 @@ extension Reusable {
 }
 extension UITableViewCell: Reusable {}
 extension UIViewController:Reusable {}
+
+extension UIApplication {
+    class func topViewController(controller: UIViewController? = UIApplication.shared.keyWindow?.rootViewController) -> UIViewController? {
+        if let navigationController = controller as? UINavigationController {
+            return topViewController(controller: navigationController.visibleViewController)
+        }
+        if let tabController = controller as? UITabBarController {
+            if let selected = tabController.selectedViewController {
+                return topViewController(controller: selected)
+            }
+        }
+        if let presented = controller?.presentedViewController {
+            return topViewController(controller: presented)
+        }
+        return controller
+    }
+}
+extension UIViewController {
+    func alert(message: String, title: String = "Alert") {
+        let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+        alertController.addAction(OKAction)
+        self.present(alertController, animated: true, completion: nil)
+    }
+}

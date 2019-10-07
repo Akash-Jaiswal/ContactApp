@@ -9,28 +9,28 @@
 import Foundation
 public enum ContactModel {
     public struct Request: Codable {
-        public var username: String?
         public init() {
-        }
-        public init(username: String?) {
-            self.username = username
-        }
-    }
-    public struct Response: Codable {
-        public var  id: Int?
-        public var  firstName, lastName: String?
-        public var  profilePic: String?
-        public var  favorite: Bool?
-        public var  url: String?
-        public init() {
-        }
-        public init(id: Int?,firstName: String?, lastName: String?, profilePic: String?, favorite: Bool?, url: String?) {
-            self.id = id
-            self.firstName = firstName
-            self.lastName = lastName
-            self.profilePic = profilePic
-            self.favorite = favorite
-            self.url = url
         }
     }
 }
+public struct Contact: Codable {
+    
+    public var  id: Int?
+    public var  first_name, last_name: String?
+    public var  profile_pic: String?
+    public var  favorite: Bool?
+    public var  url: String?
+    public init() {
+    }
+    public init(id: Int?,firstName: String?, lastName: String?, profilePic: String?, favorite: Bool?, url: String?) {
+        self.id = id
+        self.first_name = firstName
+        self.last_name = lastName
+        self.profile_pic = profilePic
+        self.favorite = favorite
+        self.url = url
+    }
+}
+
+
+
